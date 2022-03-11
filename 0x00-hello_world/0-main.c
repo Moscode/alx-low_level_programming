@@ -6,7 +6,8 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{
+{	
+	printf("Best School");
 	return (0);
 }
 
