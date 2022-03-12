@@ -1,8 +1,8 @@
-	.file	"main.c"
+	.file	"ahh.c"
 	.text
 	.section	.rodata
 .LC0:
-	.string	"It is working as expected."
+	.string	"Heey"
 	.text
 	.globl	main
 	.type	main, @function
