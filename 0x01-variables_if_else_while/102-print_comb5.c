@@ -18,7 +18,7 @@ int main(void)
 				{
 					if ((i != k) || (j != l))
 					{
-					if (j < l)
+					if (j <= l)
 					{
 						putchar(i + '0');
 						putchar(j + '0');
