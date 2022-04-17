@@ -18,6 +18,8 @@ int main(void)
 				{
 					if ((i != k) || (j != l))
 					{
+					if ((i < k) || (j < l))
+					{
 						putchar(i + '0');
 						putchar(j + '0');
 						putchar(' ');
@@ -27,6 +29,7 @@ int main(void)
 					{
 						putchar(',');
 						putchar(' ');
+					}
 					}
 					}
 				}
