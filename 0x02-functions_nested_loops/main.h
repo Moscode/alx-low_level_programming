@@ -6,4 +6,7 @@ int _putchar(char c);
 /* Print alphabet on the standard output */
 void print_alphabet(void);
 
+/* Print alphabet on the standard output */
+void print_alphabet_x10(void);
+
 #endif
