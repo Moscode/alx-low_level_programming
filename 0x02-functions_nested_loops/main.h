@@ -18,4 +18,7 @@ int _isalpha(int c);
 /* Determine the sign of a number */
 int print_sign(int n);
 
+/* Converting a number to absolute */
+int _abs(int);
+
 #endif
