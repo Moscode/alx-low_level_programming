@@ -12,7 +12,10 @@ void print_alphabet_x10(void);
 /* Determine if a value is lowercase or not */
 int _islower(int c);
 
-/*Determine if a character is alphabet or otherwise */
+/* Determine if a character is alphabet or otherwise */
 int _isalpha(int c);
+
+/* Determine the sign of a number */
+int print_sign(int n);
 
 #endif
