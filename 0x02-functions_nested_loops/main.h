@@ -24,4 +24,7 @@ int _abs(int);
 /* Get last digit of a number */
 int print_last_digit(int);
 
+/* Print every minute of the day of Jack Bauer */
+void jack_bauer(void);
+
 #endif
