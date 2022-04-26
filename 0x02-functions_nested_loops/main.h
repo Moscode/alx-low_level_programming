@@ -21,4 +21,7 @@ int print_sign(int n);
 /* Converting a number to absolute */
 int _abs(int);
 
+/* Get last digit of a number */
+int print_last_digit(int);
+
 #endif
