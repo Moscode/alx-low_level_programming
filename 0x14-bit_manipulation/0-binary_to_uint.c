@@ -1,51 +1,54 @@
 #include "main.h"
 
 /**
- * _pow - calculates a raised to the power b
- * @a: base number
- * @b: exponent
+ *raiseToPower - Compute value to the power of p
+ *@value: main value
+ *@p: exponent
  *
- * Return: number
+ *Return: total computation value Always > 0 (Success)
  */
 
-int _pow(int a, int b)
+int raiseToPower(int value, int p)
 {
-	if (b < 0)
+	if (p < 0)
 		return (-1);
-	if (b == 0)
+	else if (p == 0)
 		return (1);
-	return (a * _pow(a, b - 1));
+	else
+		return (value * raiseToPower(value, p - 1));
 }
 
 /**
- * binary_to_uint - converts a binary number to an unsigned int
- * @b: pointer to a string of 0 and 1 chars
+ *binary_to_uint - converts a binary number to an unsigned int
+ *@b: pointer to a string of 0(s) and 1(s) chars
  *
- * Return: converted number or 0 if b is NULL or have chars that aren't 0 or 1
-*/
+ * Return: converted number in base 10 or 0 if b is Null or b > 1
+ */
+
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal;
-	int len, power;
+	unsigned int result;
+	int length, power;
 
 	if (b == NULL)
 		return (0);
 
-	len = 0;
-	while (b[len] != '\0')
-		len++;
 
-	decimal = 0;
+	length = 0;
+	while (b[length] != '\0')
+		length++;
+
+	result = 0;
 	power = 0;
-	while (len-- && len >= 0)
+	while (length-- && length >= 0)
 	{
-		if (b[len] == '1')
-			decimal += _pow(2, power);
-		else if (b[len] != '0')
+		if (b[length] == '1')
+			result += raiseToPower(2, power);
+		else if (b[length] != '0')
 			return (0);
 		power++;
 	}
 
-	return (decimal);
+	return (result);
 }
