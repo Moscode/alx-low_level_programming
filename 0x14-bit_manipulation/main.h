@@ -2,7 +2,7 @@
 #define _MAIN_H_
 
 #include <stdlib.h>
-#include <unistdd.h>
+#include <unistd.h>
 
 /**
  * binary_to_uint
