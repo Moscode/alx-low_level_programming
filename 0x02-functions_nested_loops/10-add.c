@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * add - add two numbers together
  * @a: first number
