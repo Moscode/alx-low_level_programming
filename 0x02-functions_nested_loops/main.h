@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdio.h>
 /* Print to standard output using _putchar() */
 int _putchar(char c);
 
@@ -32,5 +33,8 @@ void times_table(void);
 
 /* Add two numbers together */
 int add(int, int);
+
+/* Print all natural number to 98 */
+void print_to_98(int n);
 
 #endif
